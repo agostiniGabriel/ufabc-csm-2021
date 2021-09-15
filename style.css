@@ -1,0 +1,94 @@
+.header {
+    height: 300px;
+    width: 100%;
+    position: relative;
+    align-items: center;
+    justify-content: center;
+    align-content: center;
+    display: flex;
+    background-image:url('./waveHeader.svg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    animation: waveAnim 15s cubic-bezier(0, 0.49, 1, 0.57) alternate-reverse infinite;
+    aspect-ratio: 2/1;
+}
+
+.headerTitle {
+    position: absolute;
+    font-size: 16;
+    color: white;
+    font-weight: bold;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+.content {
+    background: #333333;
+    height: 800px;
+    width: 100%;
+    position: relative;
+    display: flex;
+    
+}
+
+
+.waveFooter {
+    background-image:url('./waveFooter.svg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    aspect-ratio: 5/1;
+    animation: waveAnim 20s cubic-bezier(0, 0.49, 1, 0.57) alternate infinite;
+}
+
+.container {
+    position: relative;
+    padding: 0;
+    margin: 0;
+    border-width: 0px;
+}
+
+.integrantesList{
+    padding-left: 10px;
+    list-style-type:circle;
+    font-size: 10;
+    color: white;
+    font-weight: lighter;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    align-items: center;
+    justify-content: center;
+    justify-self: center;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+p1 {
+    margin-top: 10px;
+    position: absolute;
+    font-size: 10;
+    font-weight: lighter;
+    color: white;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif; 
+}
+
+p2 {
+    position: relative;
+    font-size: 10;
+    font-weight: lighter;
+    color: white;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif; 
+}
+
+@keyframes waveAnim {
+    from
+    {
+        background-position:0 0;
+    }
+    to 
+    {
+        background-position: 50 10;
+    }
+}
