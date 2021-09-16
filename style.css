@@ -53,6 +53,7 @@
 
 .integrantesList{
     min-width: 300px;
+    width: auto;
     padding-left: 10px;
     list-style-type:circle;
     font-size: 10;
@@ -113,6 +114,7 @@
 .picture:hover{
     border: 5px solid #4B4F9B;
     max-height: 120px;
+    transform: translateY(-10px);
     width: auto;
     border-width: 4px;
     border-radius: 50%;
