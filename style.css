@@ -28,19 +28,21 @@
 
 .content {
     background-color: transparent;
-    height: 800px;
+    height: fit-content;
     width: 100%;
     position: relative;
 }
 
 
 .waveFooter {
+    margin-top: 5vh;
+    position: relative;
     display: flex;
     background-image:url('./waveFooter.svg');
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
-    aspect-ratio: 7/1;
+    aspect-ratio: 6/1;
     align-items: flex-end;
     justify-content: center;
     animation: waveAnim 20s cubic-bezier(0.4, 0, 1, 1) alternate infinite;
@@ -86,7 +88,7 @@
 }
 
 .tituloSessao {
-    position: absolute;
+    position: relative;
     font-size: 1.25rem;
     color: white;
     text-transform: uppercase;
@@ -101,11 +103,13 @@
 }
 
 .sessao{
-    margin-top: 1vh;
+    margin-top: 10vh;
     position: relative;
     display: flex;
-    min-height: 10vh;
+    height: fit-content;
+    width: 100%;
     background-color: transparent;
+    flex-direction: column;
 }
 
 .picture{
@@ -144,6 +148,88 @@
     aspect-ratio: 1/1;
     animation: blobAnim 50s ease alternate infinite;
     animation-delay: 500ms;
+}
+
+.listaLabs {
+    margin-top: 5vh;
+    width: 100%;
+    height: fit-content;
+    display: grid;
+    position: relative;
+    justify-content: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    grid-template-columns: repeat(3, 250px);
+    grid-row-gap: 80px;
+    grid-column-gap: 80px;
+}
+
+.labItem {
+    background-color: #4B4F9B ;
+    width: 250px;
+    height: 300px;
+    border-radius: 5%;
+    position:relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    color: white;
+    
+}
+
+.labNum{
+    background-color: transparent;
+    margin-top: 10px;
+    position: relative;
+    font-size: 1.25rem;
+    color: inherit;
+    text-transform: uppercase;
+    font-weight: bold;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+
+.titleLab{
+    background-color: transparent;
+    margin-top: 10px;
+    position: relative;
+    font-size: 0.75rem;
+    color: inherit;
+    text-transform: uppercase;
+    font-weight: bold;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+.labItem:hover{
+    border: 3px solid #4B4F9B;
+    background-color: rgb(226, 226, 226);
+    transform: scale(1.05);
+    color: rgb(53, 53, 53);
+}
+
+
+.imgLab{
+    width: 50%;
+    height: auto;
+    background-color: transparent;
+    margin-top: 5px;
+}
+
+.button{
+    width: 60%;
+    height: 10%;
+    border-radius:.4em;
+    margin-top: 30px;
+    cursor: pointer;
+	background: #FFFFFF;
+	border: none;
+    color: rgb(53, 53, 53);
+	text-transform: uppercase;
+    font-weight: bold;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
 }
 
 * {
@@ -198,3 +284,4 @@ p2 {
 
     
 }
+
