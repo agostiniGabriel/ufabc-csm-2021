@@ -1,9 +1,9 @@
 
 var backBTN = document.getElementById("btnVoltar");
 var gabrielBTN = document.getElementById("gabriel");
-var rodrigoBTN = document.getElementById("gabriel");
-var viniciusBTN = document.getElementById("gabriel");
-var caioBTN = document.getElementById("gabriel");
+var rodrigoBTN = document.getElementById("rodrigo");
+var viniciusBTN = document.getElementById("vinicius");
+var caioBTN = document.getElementById("caio");
 
 backBTN.addEventListener("click",function(){
     returnHome();
