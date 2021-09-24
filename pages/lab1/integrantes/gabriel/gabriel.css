@@ -1,0 +1,197 @@
+* {
+    background-color: #424242;
+    padding: 0;
+    margin: 0;
+}
+
+.containerHeader {
+    display: flex;
+    flex-direction: column;
+    min-height: fit-content;
+    height: 70%;
+    width: 100%;
+    align-items: center;
+    align-content: center;
+    position: relative;
+}
+
+.headerCard {
+    display: flex;
+    flex-direction: row;
+    background-image: url('./assets/profile-background.svg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    min-height: 400px;
+    width: 90%;
+    border-radius: 5em;
+    margin-top: 5vh;
+    justify-content: space-evenly;
+    align-content: center;
+    align-items: center;
+    transition: 2s ease;
+}
+
+.headerCard:hover {
+    transform: scale(1.05);
+    transition: 2s ease;
+}
+
+
+
+.title{
+    margin-top: 1vh;
+    position: relative;
+    font-size: 1.25rem;
+    color: white;
+    text-transform: uppercase;
+    font-weight:normal;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    background-color: transparent;
+}
+
+.subtitle{
+    margin-top: 1vh;
+    position: relative;
+    font-size: 1.0rem;
+    color: rgb(145, 140, 140);
+    font-weight:normal;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    background-color: transparent;
+}
+
+.subtitle::after{
+    content: "\a";
+    white-space: pre;
+}
+
+.infoContainer {
+    display: flex;
+    flex-direction: column;
+    height: 70%;
+    justify-content: center;
+    align-items: center;
+    background-color: transparent;
+    flex-grow: 1;
+}
+
+.infoImg {
+    border-radius: 2em;
+    height: 50%;
+}
+
+.redesSociais {
+    margin-top: 2vh;
+    height: 10%;
+    background-color: transparent;
+    display: flex;
+    align-items: center;
+    justify-content:center;
+    width: 50%;
+}
+
+.gitLogo{
+    background-image: url("./assets/gitLogo.svg");
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+    height: 100%;
+    width: 30%;
+    background-color: transparent;
+}
+
+.linkedinLogo {
+    background-image: url("./assets/linkedinLogo.svg");
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+    height: 100%;
+    width: 30%;
+    background-color: transparent;
+}
+
+.description{
+    align-self: center;
+    margin-top: 8vh;
+    margin-right: 30%;
+    width: 20%;
+    height: 70%;
+    background-color: transparent;
+    flex-grow: 3;
+    text-align: justify;
+}    
+
+.audioContainer {
+    display: flex;
+    flex-direction: column;
+    background-color: transparent;
+    width: 100%;
+    height: 60%;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+}
+
+.audioDescription {
+    margin-top: 2vh;
+    background-color: transparent;
+}
+
+.contentContainer {
+    margin-top: 5vh;
+    margin-left:5%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap:wrap;
+    column-gap: 2vh;
+    width: 90%;
+    height: 100%;
+    justify-content:space-around;
+}
+
+.listItem{
+    padding-top: 2vh;
+    display: flex;
+    flex-direction: column;
+    align-items:center;
+    min-height: 400px;
+    max-height: 400px;
+    min-width: 47%;
+    border-radius: 3em;
+    transition: 2s ease;
+    justify-content: flex-start;
+}
+
+.listItem:hover{
+    transform: scale(1.05);
+    transition: 2s ease;
+}
+
+.list1 {
+    background-image: url('./assets/list1.svg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.list2 {
+    background-image: url('./assets/list2.svg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.list3 {
+    background-image: url('./assets/list3.svg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+
+.list4 {
+    background-image: url('./assets/list4.svg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
