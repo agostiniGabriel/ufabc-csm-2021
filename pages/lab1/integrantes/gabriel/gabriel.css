@@ -110,6 +110,10 @@
     background-color: transparent;
 }
 
+.linkHover:hover{
+    cursor: pointer;
+}
+
 .description{
     align-self: center;
     margin-top: 8vh;
@@ -143,7 +147,7 @@
     display: flex;
     flex-direction: row;
     flex-wrap:wrap;
-    column-gap: 2vh;
+    row-gap: 4vh;
     width: 90%;
     height: 100%;
     justify-content:space-around;
@@ -155,7 +159,7 @@
     flex-direction: column;
     align-items:center;
     min-height: 400px;
-    max-height: 400px;
+    max-height: 600px;
     min-width: 47%;
     border-radius: 3em;
     transition: 2s ease;
@@ -183,6 +187,8 @@
 
 .list3 {
     background-image: url('./assets/list3.svg');
+    width: 96%;
+    height: 600px;
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -194,4 +200,35 @@
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
+}
+
+.sugestaoGames{
+    margin-top: 6vh;
+    display: flex;
+    background-color: transparent;
+    flex-direction: row;
+    width: 100%;
+    height: 70%;
+    justify-content: space-evenly;
+    align-items: flex-start;
+    align-content: center;
+}
+
+.sugestaoContainer {
+    background-color: transparent;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+
+.trailer {
+    width: 50%;
+    background-color: transparent;
+    text-align: center;
+}
+
+.box {
+    background-color: transparent;
+    height: 280px;
+    border-radius: 2em;
 }

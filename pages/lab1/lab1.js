@@ -16,23 +16,23 @@ function returnHome(){
 
 
 gabrielBTN.addEventListener("click",function(){
-    navigate("gabriel.html");
+    navigate("gabriel");
 });
 
 rodrigoBTN.addEventListener("click",function(){
-    navigate("rodrigo.html");
+    navigate("rodrigo");
 });
 
 viniciusBTN.addEventListener("click",function(){
-    navigate("vinicius.html");
+    navigate("vinicius");
 });
 
 caioBTN.addEventListener("click",function(){
-    navigate("caio.html");
+    navigate("caio");
 });
 
 
 function navigate(ref){
-    alert("Não implementado. Ref 👉 " + ref);
-    //window.location.assign("integrantes/" + ref);
+    //alert("Não implementado. Ref 👉 " + ref);
+    window.location.assign("integrantes/" + ref + "/" + ref + ".html");
 }
