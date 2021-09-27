@@ -16,23 +16,29 @@ function returnHome(){
 
 
 gabrielBTN.addEventListener("click",function(){
-    navigate("gabriel");
+    navigate("gabriel", false);
 });
 
 rodrigoBTN.addEventListener("click",function(){
-    navigate("rodrigo");
+    const urlRodrigo = 'https://rodrigocassimiro.github.io/index.html';
+    navigate(urlRodrigo, true);
 });
 
 viniciusBTN.addEventListener("click",function(){
-    navigate("vinicius");
+    navigate("vinicius",false);
 });
 
 caioBTN.addEventListener("click",function(){
-    navigate("caio");
+    navigate("caio",false);
 });
 
 
-function navigate(ref){
+function navigate(ref, external){
     //alert("Não implementado. Ref 👉 " + ref);
-    window.location.assign("integrantes/" + ref + "/" + ref + ".html");
+    if(external){
+        window.location.assign(ref);
+    } else {
+        window.location.assign("integrantes/" + ref + "/" + ref + ".html");
+    }
+    
 }
