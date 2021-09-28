@@ -30,7 +30,8 @@ viniciusBTN.addEventListener("click",function(){
 });
 
 caioBTN.addEventListener("click",function(){
-    navigate("caio",false);
+    const urlCaio = 'https://caio3443.github.io/CaioPedroso/';
+    navigate(urlCaio,true);
 });
 
 
