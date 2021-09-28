@@ -25,7 +25,8 @@ rodrigoBTN.addEventListener("click",function(){
 });
 
 viniciusBTN.addEventListener("click",function(){
-    navigate("vinicius",false);
+    const urlVinicius = 'https://vnasserb.github.io/index.html';
+    navigate(urlVinicius,true);
 });
 
 caioBTN.addEventListener("click",function(){
