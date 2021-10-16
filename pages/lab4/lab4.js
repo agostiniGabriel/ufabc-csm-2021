@@ -1,15 +1,6 @@
 
 var backBTN = document.getElementById("btnVoltar");
 var colabBTN = document.getElementById('btnColab');
-var execBTN = document.getElementById('btnExec');
-const bolinhas = document.querySelectorAll('[animated]');
-var control = true;
-
-
-execBTN.addEventListener("click",function(){
-    console.log(bolinhas);
-    pause();   
-});
 
 backBTN.addEventListener("click",function(){
     returnHome();
@@ -32,9 +23,6 @@ function pause(){
         });
     }
 }
-
-
-
 
 function navigate(ref, external){
     //alert("Não implementado. Ref 👉 " + ref);
