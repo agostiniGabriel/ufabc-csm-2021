@@ -14,6 +14,11 @@ document.getElementById("lab4").addEventListener("click", function(){
     navigate("lab4");
 });
 
+document.getElementById("lab5").addEventListener("click", function(){
+    navigate("lab5");
+});
+
+
 function navigate(ref){
     console.log("@@@ Navegando para " + ref);
     window.location.assign('pages/'+ ref +'/' + ref + ".html");
