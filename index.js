@@ -18,6 +18,10 @@ document.getElementById("lab5").addEventListener("click", function(){
     navigate("lab5");
 });
 
+document.getElementById("lab6").addEventListener("click", function(){
+    navigate("lab6");
+});
+
 
 function navigate(ref){
     console.log("@@@ Navegando para " + ref);
