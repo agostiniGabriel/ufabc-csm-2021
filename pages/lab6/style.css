@@ -239,7 +239,9 @@
 
 .colab{
     min-width: 900px ;
-    padding: 5vh;
+    padding-left: 5vh;
+    padding-right: 5vh;
+    padding-top: 2vh;
     min-height: 100%;
     color:white;
     z-index: 1;
