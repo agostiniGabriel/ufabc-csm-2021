@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Laboratório 8</title>
+</head>
+<body>
+    <div class="container">
+       <div class="header">
+           <div class="headerBackground"></div>
+           <img class="headerImg" style="border-radius:50%;" src="./assets/lab8.png"></img>
+           <div class="headerTitleContainer">
+               <h1 class="labTitle">Laboratório 8</h1>
+               <h2 class="labSubtitle">Codificação de Áudio MPEG</h2>
+           </div>
+       </div>
+       <div class="integrantesContainer">
+            <div class="integrante">
+                <a href="https://www.linkedin.com/in/gabriel-agostini-ribeiro/"><img class="picture" src='./assets/gabrielAvatar.jpeg'></img></a>
+                <p1 style="position: relative;">Gabriel de Agostini</p1>
+                <p1 style="position: relative;">RA: 11201721571</p1>
+            </div>
+            <div class="integrante">
+                <a href="https://linkedin.com/in/rodrigo-da-silva-cassimiro-9917071b3"><img class="picture" src='./assets/rodrigoAvatar.jpeg'></img></a>
+                <p1 style="position: relative;">Rodrigo da Silva Cassimiro</p1>
+                <p1 style="position: relative;">RA: 11036214</p1>
+            </div>
+            <div class="integrante">
+                <a href="https://www.linkedin.com/mwlite/in/vinicius-nasser-0187761b7"><img class="picture" src='./assets/viniciusAvatar.jpeg'></img></a>
+                <p1 style="position: relative;">Vinicius Nasser Bernaldo</p1>
+                <p1 style="position: relative;">RA: 11201722677</p1>
+            </div>
+            <div class="integrante">
+                <a href="https://www.linkedin.com/in/caio-pedroso-de-oliveira-74b99a191/"><img class="picture" src='./assets/caioAvatar.jpeg'></img></a>
+                <p1 style="position: relative;">Caio Pedroso de Oliveira</p1>
+                <p1 style="position: relative;">RA: 11034916 </p1>
+            </div>
+       </div>
+       <div class="content" id='content'>
+           <button class="btnVoltar" id="btnVoltar">
+               Voltar para o indíce dos Lab's 👋
+           </button>
+
+           <h1 class="tituloSessao">Audio descrição 👇</h1>
+          
+           <audio autoplay style="align-self: center;margin-top:2vh;" controls src='./assets/lab8.m4a'></audio>
+        
+           <h1 class="tituloSessao">Relatório</h1>
+           <p1 style="align-self:center">Selecione quais resultados você deseja visualizar 📑.</p1>
+           <p1 style="align-self:center;font-size:small">*Obs.: Não foi possível anexar os notebooks devido a limitaçõs de armazenamento. Estamos disponibilizando os links para acesso atráves do COLAB.</p1>
+           <div class="groupButtons" id="buttons">
+            <button class="selectedButton" id="gabriel">
+                Gabriel
+            </button>
+            <button class="button" id="rodrigo">
+                Rodrigo
+            </button>
+            <button class="button" id="vinicius">
+                Vinicius
+            </button>
+            <button class="button" id="caio">
+                Caio
+            </button>
+           </div>
+           
+           <div class="colab" id='divNotebook'>
+            <div class="colabList" style='display:flex;justify-content:center;width:100%; height:700px;'>
+                <div class="colabItem" id='colabGabriel' style='width:100%'>
+                    <object style="width: 100%;height:100%;margin-top:2vh;" data="./assets/Gabriel_Lab8.pdf" type="application/pdf">
+                        <p>Seu navegador não tem um plugin pra PDF</p>
+                    </object>
+                </div>
+
+                <div class="colabItem" id='colabCaio' style='visibility:collapse;width:0%'>
+                    <object style="width: 100%;height:100%;margin-top:2vh;" data="./assets/Caio_Lab8.pdf" type="application/pdf">
+                        <p>Seu navegador não tem um plugin pra PDF</p>
+                    </object>
+                </div>
+
+                <div class="colabItem" id='colabVinicius' style='visibility:collapse;width:0%'>
+                    <object style="width: 100%;height:100%;margin-top:2vh;" data="./assets/Vinicius_Lab8.pdf" type="application/pdf">
+                        <p>Seu navegador não tem um plugin pra PDF</p>
+                    </object>
+                </div>
+
+                <div class="colabItem" id='colabRodrigo' style='visibility:collapse;width:0%'>
+                    <object style="width: 100%; height:100%;margin-top:2vh;" data="./assets/Rodrigo_Lab8.pdf" type="application/pdf">
+                        <p>Seu navegador não tem um plugin pra PDF</p>
+                    </object>
+                </div>
+
+            </div>
+           </div> 
+           
+           <!-- <h1 class="tituloSessao" style='margin-top:5vh;'>Resultados e Conclusão</h1> -->
+           
+       </div>
+    </div> 
+    <script type="text/javascript" src="./lab8.js"></script>   
+</body>
+</html>

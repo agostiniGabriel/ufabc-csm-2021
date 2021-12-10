@@ -330,6 +330,7 @@
 .colabItem{
     display: flex;
     flex-direction: column;
+    margin-bottom: 2vh;
 }
 
 .audioWithLink{
@@ -367,8 +368,17 @@
 
 .imgParentContainer{
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
+    flex-wrap: wrap;
     width: 100%;
+    overflow-y: scroll;
+    overflow-x: hidden;
+    border: 5px solid #4B4F9B;
+    border-radius: 3rem;
+    margin: 2vh;
+    justify-items: center;
+    align-items: center;
+    justify-content: center;
 }
 
 p1 {
