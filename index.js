@@ -29,7 +29,10 @@ document.getElementById("lab7").addEventListener("click", function(){
 
 document.getElementById("lab8").addEventListener("click", function(){
     navigate("lab8");
-    console.log('Teste Lab8');
+});
+
+document.getElementById("lab9").addEventListener("click", function(){
+    navigate("lab9");
 });
 
 function navigate(ref){

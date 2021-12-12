@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Laboratório 9</title>
+</head>
+<body>
+    <div class="container">
+       <div class="header">
+           <div class="headerBackground"></div>
+           <img class="headerImg" style="border-radius:50%;" src="./assets/lab9.png"></img>
+           <div class="headerTitleContainer">
+               <h1 class="labTitle">Laboratório 9</h1>
+               <h2 class="labSubtitle">MIDI e IR</h2>
+           </div>
+       </div>
+       <div class="integrantesContainer">
+            <div class="integrante">
+                <a href="https://www.linkedin.com/in/gabriel-agostini-ribeiro/"><img class="picture" src='./assets/gabrielAvatar.jpeg'></img></a>
+                <p1 style="position: relative;">Gabriel de Agostini</p1>
+                <p1 style="position: relative;">RA: 11201721571</p1>
+            </div>
+            <div class="integrante">
+                <a href="https://linkedin.com/in/rodrigo-da-silva-cassimiro-9917071b3"><img class="picture" src='./assets/rodrigoAvatar.jpeg'></img></a>
+                <p1 style="position: relative;">Rodrigo da Silva Cassimiro</p1>
+                <p1 style="position: relative;">RA: 11036214</p1>
+            </div>
+            <div class="integrante">
+                <a href="https://www.linkedin.com/mwlite/in/vinicius-nasser-0187761b7"><img class="picture" src='./assets/viniciusAvatar.jpeg'></img></a>
+                <p1 style="position: relative;">Vinicius Nasser Bernaldo</p1>
+                <p1 style="position: relative;">RA: 11201722677</p1>
+            </div>
+            <div class="integrante">
+                <a href="https://www.linkedin.com/in/caio-pedroso-de-oliveira-74b99a191/"><img class="picture" src='./assets/caioAvatar.jpeg'></img></a>
+                <p1 style="position: relative;">Caio Pedroso de Oliveira</p1>
+                <p1 style="position: relative;">RA: 11034916 </p1>
+            </div>
+       </div>
+       <div class="content" id='content'>
+           <button class="btnVoltar" id="btnVoltar">
+               Voltar para o indíce dos Lab's 👋
+           </button>
+
+           <h1 class="tituloSessao">Audio descrição 👇</h1>
+          
+           <audio autoplay style="align-self: center;margin-top:2vh;" controls src='./assets/lab9.m4a'></audio>
+        
+           <h1 class="tituloSessao">Relatório</h1>
+           <p1 style="align-self:center">Notebook utilizado para geração das músicas e arquivos MIDI📑.</p1>
+           
+           <div class="colab" id='divNotebook'>
+            <div class="colabList" style='display:flex;justify-content:center;width:100%; height:600px;'>
+                <div class="colabItem" style='width:100%'>
+                    <script src="https://gist.github.com/agostiniGabriel/798008fd7558f8715ce661799ebafd39.js"></script>
+                </div>
+            </div>
+           </div> 
+
+           <div class="groupButtons" id="buttons">
+                <button class="selectedButton" id="integrantes">
+                    Integrantes
+                </button>
+                <button class="button" id="grupo">
+                    Música do grupo
+                </button>
+            </div>  
+
+            <div class="audioContainer">
+                <div class="audioItem" style='width:100%' id="integrantes">
+                    <div class="audioWithLink">
+                        <audio  style="margin-top:2vh;" type="audio/mpeg" controls src='./assets/audios/Musica_Do_Caio.mp3'></audio>
+                        <a class='link' href='./assets/audios/Musica_Do_Caio.mid' download>Baixar - Música - Caio</a>
+                    </div>
+                    <div class="audioWithLink">
+                        <audio  style="margin-top:2vh;" type="audio/mpeg" controls src='./assets/audios/Musica_Do_Gabriel.mp3'></audio>
+                        <a class='link' href='./assets/audios/Musica_Do_Gabriel.mid' download>Baixar - Música - Gabriel</a>
+                    </div>  
+                    <div class="audioWithLink">
+                        <audio  style="margin-top:2vh;" type="audio/mpeg" controls src='./assets/audios/Musica_Do_Rodrigo.mp3'></audio>
+                        <a class='link' href='./assets/audios/Musica_Do_Rodrigo.mid' download>Baixar - Música - Rodrigo</a>
+                    </div>  
+                    <div class="audioWithLink">
+                        <audio  style="margin-top:2vh;" type="audio/mpeg" controls src='./assets/audios/Musica_Do_Vini_sample_output.mp3'></audio>
+                        <a class='link' href='./assets/audios/Musica_Do_Vini_sample_output.mid' download>Baixar - Música - Vinicius</a>
+                    </div>   
+                </div>
+                <div class="audioItem" style='width:100%;visibility:collapse' id="grupo">
+                    <div class="audioWithLink">
+                        <audio  style="margin-top:2vh;" type="audio/mpeg" controls src='./assets/audios/Musica_Do_Grupo.mp3'></audio>
+                        <a class='link' href='./assets/audios/Musica_Do_Grupo.mid' download>Baixar - Música - Grupo</a>
+                    </div>    
+                </div>
+            </div> 
+           
+           <!-- <h1 class="tituloSessao" style='margin-top:5vh;'>Resultados e Conclusão</h1> -->
+           
+       </div>
+    </div> 
+    <script type="text/javascript" src="./lab9.js"></script>   
+</body>
+</html>
